@@ -1,0 +1,11 @@
+js
+variables constants
+types conditionals
+array functions objects
+prototypal inheritence, chaining  // asked in interviews 
+hoisting,closures // asked in interviews 
+class // asked in interviews 
+
+node js core
+
+spread operator [...arr]

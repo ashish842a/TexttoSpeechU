@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+	
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body {
+	height: 100vh;
+	background-attachment: fixed;
+}
+.container-one{
+	height: 100%;
+	width: 100%;
+	padding: 50px;
+}
+.container-one .heading{
+	/* font-size:50px; */
+	margin-bottom: 1vw;
+	color: #ffff;
+}
+.container-one .select-voice{
+	font-size: 20px;
+	color: #f1f1f1;
+}
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+.form-select{
+	font-size: 20px !important;
+}
+#front-text {
+	font-size: 35px;
+	color: white;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px black;
+	display: block;
+	position: relative;
+	margin-bottom: 5%;
+	margin-top: 15%;
+}
+
+#rate-value {
+	float: right;
+}
+
+#pitch-value {
+	float: right;
+}
+
+#foot {
+	font-size: 20px;
+	color: white;
+	font-weight: bolder;
+	display: block;
+	position: relative;
+	margin-top: 1%;
+}
+form{
+	display: inline-block;
+}
+#file{
+	display: none;
+}
+
+#download{
+	display: none;
+}
+textarea{
+	height: 200px;
+	font-size: 20px !important;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.btn{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;	
+}
+
+#btns{
+	width: 100%;
+	/* background-color: #f1f1f1; */
+	background: transparent;
+	display: flex;
+}
+
+/* for voice button */
+.v-btn{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	color:rgb(31, 25, 25);
+	background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgb(90, 103, 220) 91.1% );
+	outline: none;
+	border: none;
+}
+
+#resume{
+	height: 40px;
+	width: 40px;
+	background: url(https://cdn-icons-png.flaticon.com/512/2284/2284853.png);
+	background-position: center;
+	background-size:50%;
+	background-repeat: no-repeat;
+}
+
+
+/* for voice overlay button */
+/* bydefault it is hidden */
+.cont{
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:21%;
+	width: 100%;
+	/* border: 2px solid rgb(0, 255, 47); */
+	background: rgb(22 25 28 / 93%);
+}
+.cont .voice{
+	position: absolute;
+	top: 50%;
+	transform: translate(0%,-50%);
+	height:fit-content;
+	width: 100%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+.voice-btn{
+	position: relative;
+	height: 80px;
+	width: 80px;
+	background: url("https://i.pinimg.com/originals/42/78/76/42787621ed6d40f0c30f0ae423fc572c.gif");	
+	background-position: center;
+	/* background-size: 325%; */
+	background-size: 300%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.voice-btn>button{
+	position: absolute;
+	background-color: rgba(32, 32, 32, 0.53);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: larger;
+	border: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+} 
+.cont .wave{
+/* border: 1px solid red; */
+height: 15vw;
+width: 20vw;
+    background-position: 0;
+    background: url("/images/gif-unscreen.gif");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+	textarea{
+		height: 350px;
+	}
+  }
